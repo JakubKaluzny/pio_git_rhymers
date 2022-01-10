@@ -1,10 +1,10 @@
 package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
-	public static final int EMPTY = -1;
-	public static final int SIZE = 12;
-	public static final int FULL = 11;
-	private final int[] NUMBERS = new int[SIZE];
+	public static final int EMPTY = -1;//added final modifier
+	public static final int SIZE = 12;//added final modifier
+	public static final int FULL = 11;//added final modifier
+	private final int[] NUMBERS = new int[SIZE]; //added final modifier
 
 	public int total = EMPTY;
 
