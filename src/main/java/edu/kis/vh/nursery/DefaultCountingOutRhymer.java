@@ -2,11 +2,12 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 	public static final int EMPTY = -1;//added final modifier
+	public static final int NEGATIVE = -1;//added final modifier
 	public static final int SIZE = 12;//added final modifier
 	public static final int FULL = 11;//added final modifier
 	private final int[] NUMBERS = new int[SIZE]; //added final modifier
 
-	public int total = EMPTY;
+	public int total = NEGATIVE;
 
 	public void countIn(int in) {
 		if (!isFull())
@@ -14,7 +15,7 @@ public class DefaultCountingOutRhymer {
 	}
 
 	public boolean callCheck() {
-		return total == EMPTY;
+		return total == NEGATIVE;
 	}
 
 	public boolean isFull() {
