@@ -9,6 +9,22 @@ public class DefaultCountingOutRhymer {
 
 	private int total = NEGATIVE;
 
+	public static int getEMPTY() {
+		return EMPTY;
+	}
+
+	public static int getNEGATIVE() {
+		return NEGATIVE;
+	}
+
+	public static int getSIZE() {
+		return SIZE;
+	}
+
+	public static int getFULL() {
+		return FULL;
+	}
+
 	public int getTotal() {
 		return total;
 	}
@@ -38,4 +54,11 @@ public class DefaultCountingOutRhymer {
 		return NUMBERS[total--];
 	}
 
+	public int[] getNUMBERS() {
+		return NUMBERS;
+	}
+
+	public void setTotal(int total) {
+		this.total = total;
+	}
 }
